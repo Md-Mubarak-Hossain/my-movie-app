@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from '../../layouts/Main';
 import Home from '../Home/Home';
 
@@ -17,9 +17,8 @@ const Router = () => {
         }
     ])
     return (
-        <div>
-            
-        </div>
+        <RouterProvider router={router}>     
+        </RouterProvider>
     );
 };
 
